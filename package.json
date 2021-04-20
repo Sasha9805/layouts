@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sasha9805/layouts/issues"
   },
-  "homepage": "https://github.com/Sasha9805/layouts#readme"
+  "homepage": "https://github.com/Sasha9805/layouts#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }

@@ -1,0 +1,52 @@
+.header
+  padding: 0.6rem 0
+
+  background-color: $header-bg
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+.nav
+  &__list
+    display: flex
+    margin: 0
+    padding: 0
+
+    list-style: none
+  &__item
+    &:not(:last-of-type)
+      margin-right: 2.3rem
+  &__link
+    font-size: 14px
+    text-decoration: none
+
+    color: #000
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 1px
+
+      background-color: #000
+
+.feedback-contact
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  &__link
+    font-size: 17px
+    @include bold
+    text-decoration: none
+
+    color: $header-link-color
+  &__text
+    font-size: 14px
+
+    color: $header-link-text-color
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 1px
+
+      background-color: $header-link-text-color

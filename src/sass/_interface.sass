@@ -2,9 +2,29 @@
   box-sizing: border-box
 img
   max-width: 100%
+a
+  text-decoration: none
 body
   @include reg
+ul
+  margin: 0
+  padding: 0
+
+  list-style: none
+h1, h2, h3, h4, h4
+  margin: 0
+  padding: 0
+
+  font-weight: normal
 .container
   max-width: 1168px
   width: 95%
   margin: 0 auto
+.btn
+  @include bold
+  text-transform: uppercase
+  line-height: 1.2
+
+  border: none
+  background-color: $btn-bg
+  color: #fff

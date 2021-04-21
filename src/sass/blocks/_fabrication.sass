@@ -1,0 +1,113 @@
+.fabrication
+  padding: 112px 0 80px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &__info
+    width: 50%
+    
+    color: rgb(255, 250, 250)
+  &__title
+    margin-bottom: 2rem
+
+    font-size: 48px
+    line-height: 1.25
+  &__subtitle
+    margin-bottom: 3.7rem
+
+    font-size: 20px
+    @include light
+    line-height: 1.2
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 1.3rem
+  &__visual-info
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 35px
+    min-height: 35px
+    margin-right: 1.5rem
+
+    border-radius: 50%
+    border: 1px solid rgba(#fff, 0.2)
+    &_reload
+      background: url('../img/fabrication-reload.png') center no-repeat
+    &_map
+      background: url('../img/fabrication-map.png') center no-repeat
+  &__text
+    max-width: 220px
+
+    @include light
+    font-size: 15px
+    line-height: 1.2
+    &_size
+      &_s
+        max-width: 135px
+
+  &__form-block
+    max-width: 370px
+    width: 95%
+    padding: 35px 0
+    margin-top: 13px
+    margin-bottom: 20px
+
+    background-color: #fff
+  &__form-title
+    max-width: 70%
+    margin: 0 auto 27px
+
+    font-size: 18px
+    line-height: 1.2
+    text-align: center 
+  &__important-form-title
+    @include bold
+  &__form
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__input
+    width: 70%
+    margin-bottom: 15px
+    padding: 15px 0
+
+    border: 1px solid rgb(232, 232, 232)
+    &::placeholder
+      font-size: 13px
+      @include light
+      text-align: center
+      
+      color: rgb(124, 124, 124)
+    &:last-of-type
+      margin-bottom: 20px
+  &__btn
+    width: 70%
+    padding: 22px 40px
+
+    font-size: 15px   
+
+@media screen and (max-width: 1085px)
+  .fabrication
+    &__info
+      width: 56%
+
+@media screen and (max-width: 992px)
+  .fabrication
+    &__title
+      font-size: 35px
+    &-wrapper
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+
+@media screen and (max-width: 768px)
+  .fabrication
+    &__info
+      width: 100%
+    &__btn
+      padding: 20px 10px
+
+@media screen and (max-width: 576px)
+  .fabrication
+    padding: 20px 0 40px

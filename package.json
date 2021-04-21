@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Sasha9805/layouts#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
   }
 }

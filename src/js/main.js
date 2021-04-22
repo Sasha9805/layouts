@@ -20,13 +20,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/js/modules/slider.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/slider.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction slider(slidesSelector, arrowLeftSelector, arrowRightSelector) {\r\n\r\n  const sliderItems = document.querySelectorAll(slidesSelector),\r\n        sliderItemsCount = sliderItems.length,\r\n        btnLeft = document.querySelector(arrowLeftSelector),\r\n        btnRight = document.querySelector(arrowRightSelector);\r\n\r\n  let slideIndex = 0;\r\n\r\n  function hideAll() {\r\n    sliderItems.forEach(item => {\r\n      item.style.display = 'none';\r\n    });\r\n  }\r\n\r\n  function showSlide(ind = 0) {\r\n    sliderItems[ind].style.display = '';\r\n  }\r\n\r\n  hideAll();\r\n  showSlide();\r\n\r\n  btnLeft.addEventListener('click', () => {\r\n    hideAll();\r\n    slideIndex = slideIndex - 1 < 0 ? sliderItemsCount - 1 : slideIndex - 1;\r\n    console.log(slideIndex);\r\n    showSlide(slideIndex);\r\n  });\r\n\r\n  btnRight.addEventListener('click', () => {\r\n    hideAll();\r\n    slideIndex = slideIndex + 1 > sliderItemsCount - 1 ? 0 : slideIndex + 1;\r\n    console.log(slideIndex);\r\n    showSlide(slideIndex);\r\n  });\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slider);\n\n//# sourceURL=webpack://layouts/./src/js/modules/slider.js?");
+
+/***/ }),
+
 /***/ "./src/js/script.js":
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\n\r\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n\r\n  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n\r\n});\n\n//# sourceURL=webpack://layouts/./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n\r\n  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n\r\n  (0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__.default)('.projects__slide', '.arrow-left', '.arrow-right');\r\n\r\n});\n\n//# sourceURL=webpack://layouts/./src/js/script.js?");
 
 /***/ })
 

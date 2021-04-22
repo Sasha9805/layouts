@@ -1,0 +1,105 @@
+.layout-types
+  padding-top: 5.9rem
+  padding-bottom: 2rem
+  &__cards
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-basis: 32%
+    padding-top: 2rem
+    padding-bottom: 2.5rem
+
+    text-align: center
+    &:hover
+      box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.1)
+      .layout-types__card-btn
+        background-color: $btn-bg
+        color: #fff
+      .layout-types__card-overlay
+        position: relative
+      .layout-types__card-overlay-bg
+        position: absolute
+        left: 0
+        top: 0
+
+        width: 100%
+        height: 100%
+      @for $i from 1 through 6
+        .layout-types__card-overlay-bg_#{$i}
+          @if $i==3
+            background-image: url('../img/layout-type-#{$i}.jpg')
+          @else
+            background-image: url('../img/layout-type-#{$i}.png')
+          background-size: cover
+    &:nth-of-type(-n+3)
+      margin-bottom: 1.55rem
+    &-title
+      margin-bottom: 1.4rem
+
+      font-size: 20px
+      line-height: 1.2
+    &-img
+      vertical-align: top
+    &-list
+      flex-grow: 1
+      margin-bottom: 0.5rem
+      &-item
+        @include light
+        font-size: 16px
+        line-height: 2.188
+        &:not(:last-of-type)::after
+          content: ''
+          display: block
+          width: 9px
+          height: 2px
+          margin: 0 auto
+
+          background-color: $btn-bg
+    &-btn
+      padding: 20px 29px
+
+      font-size: 13px
+      line-height: 1.2
+
+      background-color: #fff
+      color: #000
+      border: 1px solid $btn-border-layout
+    &-descr
+      flex-grow: 1
+      max-width: 65%
+
+      @include light
+      font-size: 16px
+      line-height: 1.313
+    &-overlay
+      margin-bottom: 1.6rem
+
+@media screen and (max-width: 992px)
+  .layout-types
+    &__subtitle
+      margin-bottom: 2rem
+    &__card
+      flex-basis: 47%
+      margin-bottom: 1.55rem
+      &-descr
+        max-width: 80%
+
+@media screen and (max-width: 768px)
+  .layout-types
+    &__cards
+      flex-direction: column
+      align-items: center
+    &__card
+      padding-left: 20px
+      padding-right: 20px
+      &-descr
+        max-width: 250px
+        margin-bottom: 20px
+
+@media screen and (max-width: 576px)
+  .layout-types
+    padding: 20px 0 0

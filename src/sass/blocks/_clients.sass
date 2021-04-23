@@ -1,0 +1,55 @@
+.clients
+  padding-top: 6.1rem
+  padding-bottom: 11rem
+  text-align: center
+  &__title
+    font-size: 24px
+    line-height: 0.917
+    margin-bottom: 6rem
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__slider
+    position: relative
+    width: 950px
+    height: 68px
+    overflow: hidden
+    // flex-grow: 1
+    // display: flex
+    // align-items: center
+    // justify-content: space-evenly
+    // transition: all ease 1s
+    &-wrapper
+      position: absolute
+      left: 0
+
+      display: flex
+      align-items: center
+
+      transition: all ease 1s
+  &__slide
+    width: 170px
+    margin-right: 20px
+    flex-shrink: 0
+
+@media screen and (max-width: 992px)
+  .clients
+    padding: 20px 0 60px
+    &__title
+      margin-bottom: 2rem
+    &__slider
+      width: 570px
+
+@media screen and (max-width: 768px)
+  .clients
+    &__slider
+      width: 460px
+    &__slide
+      width: 190px
+      margin-right: 40px
+
+@media screen and (max-width: 576px)
+  .clients
+    &__slider
+      width: 190px

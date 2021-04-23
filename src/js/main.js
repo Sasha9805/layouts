@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/js/modules/slider-client.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/slider-client.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction sliderClient(sliderSelector, sliderItemsSelector, arrowLeftSelector, arrowRightSelector) {\r\n\r\n  let slider = document.querySelector(sliderSelector),\r\n      sliderItems = document.querySelectorAll(sliderItemsSelector),\r\n      btnLeft = document.querySelector(arrowLeftSelector),\r\n      btnRight = document.querySelector(arrowRightSelector);\r\n\r\n  btnRight.addEventListener('click', () => {\r\n\r\n    slider.append(sliderItems[0]);\r\n    const sliderCopy = slider.cloneNode(true);\r\n    slider.replaceWith(sliderCopy);\r\n\r\n    slider = document.querySelector(sliderSelector);\r\n    sliderItems = document.querySelectorAll(sliderItemsSelector);\r\n\r\n  });\r\n\r\n  btnLeft.addEventListener('click', () => {\r\n\r\n    slider.prepend(sliderItems[sliderItems.length - 1]);\r\n    const sliderCopy = slider.cloneNode(true);\r\n    slider.replaceWith(sliderCopy);\r\n\r\n    slider = document.querySelector(sliderSelector);\r\n    sliderItems = document.querySelectorAll(sliderItemsSelector);\r\n\r\n  });\r\n\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sliderClient);\n\n//# sourceURL=webpack://layouts/./src/js/modules/slider-client.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/slider.js":
 /*!**********************************!*\
   !*** ./src/js/modules/slider.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n\r\n  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n\r\n  (0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__.default)('.projects__slide', '.arrow-left', '.arrow-right');\r\n\r\n});\n\n//# sourceURL=webpack://layouts/./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n/* harmony import */ var _modules_slider_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider-client */ \"./src/js/modules/slider-client.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n\r\n  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n\r\n  (0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__.default)('.projects__slide', '#projects-arrow-left', '#projects-arrow-right');\r\n\r\n  (0,_modules_slider_client__WEBPACK_IMPORTED_MODULE_2__.default)('.clients__slider-wrapper', '.clients__slide', '#clients-arrow-left', '#clients-arrow-right');\r\n\r\n});\n\n//# sourceURL=webpack://layouts/./src/js/script.js?");
 
 /***/ })
 

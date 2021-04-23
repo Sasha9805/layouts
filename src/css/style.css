@@ -372,6 +372,7 @@ template {
 
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 a {
@@ -4926,7 +4927,7 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 .projects__slide-title {
@@ -5024,6 +5025,110 @@ p {
   }
   .projects__btn {
     width: 70%;
+  }
+}
+
+.targets {
+  background-color: #07090a;
+  color: #fff;
+  text-align: center;
+  padding-top: 6.3rem;
+  padding-bottom: 2.6rem;
+}
+
+.targets__title {
+  font-size: 24px;
+  line-height: 1.292;
+  max-width: 60%;
+  margin: 0 auto 6rem;
+}
+
+.targets__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.targets__item {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+.targets__img {
+  min-height: 51px;
+  margin-bottom: 2rem;
+}
+
+.targets__descr {
+  max-width: 80%;
+  font-family: 'Proxima Nova Light';
+  font-size: 15px;
+  line-height: 1.333;
+}
+
+.targets__descr_size_l {
+  max-width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  .targets__title {
+    max-width: 90%;
+  }
+  .targets__descr {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .targets__title {
+    font-size: 20px;
+  }
+  .targets__item {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .targets {
+    padding: 40px 0 60px;
+  }
+  .targets__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .targets__item {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+  }
+  .targets__item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .targets__title {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

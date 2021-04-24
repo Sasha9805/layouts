@@ -37,29 +37,6 @@
 
       background-color: #000
 
-.feedback-contact
-  display: flex
-  flex-direction: column
-  align-items: flex-end
-  &__link
-    font-size: 17px
-    @include bold
-
-    color: $header-link-color
-  &__text
-    font-size: 14px
-
-    color: $header-link-text-color
-
-    cursor: pointer
-    &::after
-      content: ''
-      display: block
-      width: 100%
-      height: 1px
-
-      background-color: $header-link-text-color
-
 @media screen and (max-width: 1050px)
   .nav
     &__item
@@ -117,10 +94,3 @@
       &-text
         font-size: 14px
         color: #fff
-
-  .feedback-contact
-    &__link
-      color: #fff
-    &__text
-      &::after
-        display: none

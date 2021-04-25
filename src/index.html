@@ -62,7 +62,7 @@
 
           <div class="feedback-contact header__feedback-contact">
             <a class="feedback-contact__link" href="tel:+88008913333">8 800 891-33-33</a>
-            <a class="feedback-contact__text">Заказать обратный звонок</a>
+            <a class="feedback-contact__text modal-link">Заказать обратный звонок</a>
           </div>
           <!-- /.feedback-contact -->
         </div>
@@ -109,18 +109,20 @@
           </div>
           <!-- /.fabrication__info -->
 
-          <div class="fabrication__form-block">
-            <h3 class="fabrication__form-title">
-              Оставьте заявку и получите расчет стоимость макета в&nbsp;течение <span class="fabrication__important-form-title">30
+          <div class="form-block fabrication__form-block">
+            <h3 class="form-block-title fabrication__form-title">
+              Оставьте заявку и получите расчет стоимость макета в&nbsp;течение <span
+                class="form-block-title_important fabrication__important-form-title">30
                 минут</span>
             </h3>
             <!-- /.fabrication__form-title -->
 
-            <form action="#" class="form fabrication__form">
-              <input class="form__input fabrication__input" type="text" placeholder="Ваше имя">
-              <input class="form__input fabrication__input" type="tel" placeholder="Контактный телефон">
-              <input class="form__input fabrication__input" type="email" placeholder="Электронная почта">
-              <button class="btn form__btn fabrication__btn" type="submit">Оставить заявку</button>
+            <form action="#" class="form form-block-form fabrication__form">
+              <input class="form__input form-block__input fabrication__input" type="text" placeholder="Ваше имя">
+              <input class="form__input form-block__input fabrication__input" type="tel"
+                placeholder="Контактный телефон">
+              <input class="form__input form-block__input fabrication__input" type="email" placeholder="Электронная почта">
+              <button class="btn form__btn form-block__btn fabrication__btn" type="submit">Оставить заявку</button>
             </form>
 
           </div>
@@ -177,7 +179,7 @@
             </ul>
             <!-- /.layout-types__card-list -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -208,7 +210,7 @@
             </ul>
             <!-- /.layout-types__card-list -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -241,7 +243,7 @@
             </ul>
             <!-- /.layout-types__card-list -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -274,7 +276,7 @@
             </ul>
             <!-- /.layout-types__card-list -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -305,7 +307,7 @@
             </ul>
             <!-- /.layout-types__card-list -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -325,7 +327,7 @@
             </div>
             <!-- /.layout-types__card-descr -->
 
-            <button type="button" class="btn layout-types__card-btn">Рассчитать стоимость</button>
+            <button type="button" class="btn layout-types__card-btn modal-link">Рассчитать стоимость</button>
             <!-- /.btn layout-types__card-btn -->
           </div>
           <!-- /.layout-types__card -->
@@ -383,7 +385,7 @@
                 </div>
               </div>
               <!-- /.project__slide-characteristic -->
-              <button type="button" class="btn projects__btn">Заказать макет</button>
+              <button type="button" class="btn projects__btn modal-link">Заказать макет</button>
             </div>
             <!-- /.project__info -->
 
@@ -419,7 +421,7 @@
                 </div>
               </div>
               <!-- /.project__slide-characteristic -->
-              <button type="button" class="btn projects__btn">макет</button>
+              <button type="button" class="btn projects__btn modal-link">макет</button>
             </div>
             <!-- /.project__info -->
 
@@ -455,7 +457,7 @@
                 </div>
               </div>
               <!-- /.project__slide-characteristic -->
-              <button type="button" class="btn projects__btn">Заказать</button>
+              <button type="button" class="btn projects__btn modal-link">Заказать</button>
             </div>
             <!-- /.project__info -->
 
@@ -688,7 +690,7 @@
 
         <div class="feedback-contact footer__feedback-contact">
           <a class="feedback-contact__link footer__feedback-contact-link" href="tel:+88008913333">8 800 891-33-33</a>
-          <a class="feedback-contact__text">Заказать обратный звонок</a>
+          <a class="feedback-contact__text modal-link">Заказать обратный звонок</a>
         </div>
         <!-- /.feedback-contact -->
 
@@ -700,6 +702,36 @@
 
   </footer>
   <!-- /.footer -->
+
+  <div class="arrow-up">
+    <img src="img/arrow-left.png" alt="left">
+  </div>
+  <!-- /.arrow-up -->
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-close">&times;</div>
+      <div class="form-block">
+        <h3 class="form-block-title ">
+          Оставьте заявку и получите расчет стоимость макета в&nbsp;течение <span
+            class="form-block-title_important ">30
+            минут</span>
+        </h3>
+        <!-- /.fabrication__form-title -->
+
+        <form action="#" class="form form-block-form">
+          <input class="form__input form-block__input" type="text" placeholder="Ваше имя">
+          <input class="form__input form-block__input" type="tel" placeholder="Контактный телефон">
+          <input class="form__input form-block__input" type="email" placeholder="Электронная почта">
+          <button class="btn form__btn form-block__btn" type="submit">Оставить заявку</button>
+        </form>
+
+      </div>
+      <!-- /.form-block -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
   
   <script src="js/main.js"></script>
 </body>

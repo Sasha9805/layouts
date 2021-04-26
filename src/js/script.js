@@ -5,6 +5,8 @@ import slider from './modules/slider';
 import sliderClient from './modules/slider-client';
 import scrollUp from './modules/scroll-up';
 import modal from './modules/modal';
+import forms from "./modules/forms";
+import scroll from './modules/scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,5 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
   scrollUp('.arrow-up', 1000);
 
   modal('.modal-link', '.modal', '.modal-close');
+
+  forms();
+
+  scroll();
 
 });

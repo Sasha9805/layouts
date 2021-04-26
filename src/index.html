@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div class="hero">
+  <div class="hero" id="hero">
     <header class="header">
 
       <div class="container">
@@ -26,32 +26,32 @@
             <!-- /.nav__burger-container -->
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link">Главная</a>
+                <a href="#hero" class="nav__link">Главная</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
               <li class="nav__item">
-                <a href="#" class="nav__link">Виды макетов</a>
+                <a href="#layout-types" class="nav__link">Виды макетов</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
               <li class="nav__item">
-                <a href="#" class="nav__link">Комплектация макетов</a>
+                <a href="#targets" class="nav__link">Комплектация макетов</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
               <li class="nav__item">
-                <a href="#" class="nav__link">Реализованные проекты</a>
+                <a href="#projects" class="nav__link">Реализованные проекты</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
               <li class="nav__item">
-                <a href="#" class="nav__link">Наши клиенты</a>
+                <a href="#clients" class="nav__link">Наши клиенты</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
               <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
+                <a href="#footer" class="nav__link">Контакты</a>
                 <!-- /.nav__link -->
               </li>
               <!-- /.nav__item -->
@@ -118,10 +118,10 @@
             <!-- /.fabrication__form-title -->
 
             <form action="#" class="form form-block-form fabrication__form">
-              <input class="form__input form-block__input fabrication__input" type="text" placeholder="Ваше имя">
-              <input class="form__input form-block__input fabrication__input" type="tel"
+              <input name="userName" class="form__input form-block__input fabrication__input" type="text" placeholder="Ваше имя">
+              <input name="userPhone" class="form__input form-block__input fabrication__input" type="tel"
                 placeholder="Контактный телефон">
-              <input class="form__input form-block__input fabrication__input" type="email" placeholder="Электронная почта">
+              <input name="userEmail" class="form__input form-block__input fabrication__input" type="email" placeholder="Электронная почта">
               <button class="btn form__btn form-block__btn fabrication__btn" type="submit">Оставить заявку</button>
             </form>
 
@@ -142,7 +142,7 @@
 
   <main>
 
-    <section class="section layout-types">
+    <section class="section layout-types" id="layout-types">
 
       <div class="container">
 
@@ -341,7 +341,7 @@
     </section>
     <!-- /.section layout-types -->
 
-    <section class="section projects">
+    <section class="section projects" id="projects">
 
       <div class="container">
 
@@ -477,7 +477,7 @@
     </section>
     <!-- /.section projects -->
 
-    <section class="section targets">
+    <section class="section targets" id="targets">
 
       <div class="container">
 
@@ -592,7 +592,7 @@
     </section>
     <!-- /.section targets -->
 
-    <section class="section clients">
+    <section class="section clients" id="clients">
 
       <div class="container">
 
@@ -666,7 +666,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <div class="container">
 
@@ -720,9 +720,9 @@
         <!-- /.fabrication__form-title -->
 
         <form action="#" class="form form-block-form">
-          <input class="form__input form-block__input" type="text" placeholder="Ваше имя">
-          <input class="form__input form-block__input" type="tel" placeholder="Контактный телефон">
-          <input class="form__input form-block__input" type="email" placeholder="Электронная почта">
+          <input name="userName" class="form__input form-block__input" type="text" placeholder="Ваше имя">
+          <input name="userPhone" class="form__input form-block__input" type="tel" placeholder="Контактный телефон">
+          <input name="userEmail" class="form__input form-block__input" type="email" placeholder="Электронная почта">
           <button class="btn form__btn form-block__btn" type="submit">Оставить заявку</button>
         </form>
 

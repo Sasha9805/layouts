@@ -26,12 +26,13 @@ function scrollUp(arrowSelector, heightToVisible) {
   // }
 
   arrow.addEventListener('click', () => {
+    console.log(1);
     step();
   });
 
   function step() {
     window.scrollBy(0, -50);
-    if (window.pageYOffset !== 0) {
+    if (window.pageYOffset > 0) {
       requestAnimationFrame(step);
     }
   }
